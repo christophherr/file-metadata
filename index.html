@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File MetaData MicroService</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" />
+    <style>
+      
+    header,.content {
+			max-width: 1000px;
+			margin: 30px auto 0;
+		}
+    .title {
+      text-align: center;
+      }
+    .button {
+			margin-top: 25px;
+		}
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1 class="title is-1">
+      File MetaData Microservice
+      </h1>
+    </header>
+    <div class="content">
+		<div class="field">
+			<form action="/file-info" method="post" enctype="multipart/form-data">
+				<label class="label">Please upload an Image</label>
+				<input type="file" class="input is-success" id="file" name="file">
+				<br>
+				<input type="submit" class="button is-primary" value="Upload">
+			</form>
+		</div>
+	</div>
+  </body>
+</html>
